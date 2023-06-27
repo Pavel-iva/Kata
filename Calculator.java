@@ -42,7 +42,7 @@ public class Calculator {
             default:
                 throw new IllegalArgumentException("throws Exception");
         }
-        if (isNum1Roman && (result <= 0 || result > 10)) {
+        if (isNum1Roman && (result <= 0)) {
             throw new IllegalArgumentException("throws Exception");
         }
         String output = isNum1Roman ? intToRoman(result) : String.valueOf(result);
